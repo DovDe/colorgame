@@ -41,7 +41,7 @@ h1{
 #message{
 	display: inline-block;
 	width: 30vw;
-	color: lightblue;
+	color: rgb(120, 228, 243);
 	font-size: 2em;
 
 }
@@ -56,7 +56,7 @@ h1{
 }
 #header{
 	line-height: 4em;
-	background: lightblue;
+	background: rgb(120, 228, 243);
 	font-weight: 100;
 }
 button{
@@ -64,7 +64,7 @@ button{
 	background: none;
 	text-transform: uppercase;
 	height: 100%;
-	color: lightblue;
+	color: rgb(120, 228, 243);
 	font-weight: 700;
 	letter-spacing: 1px;
 	font-size: inherit;
@@ -151,27 +151,21 @@ input[type=number]::-webkit-inner-spin-button {
 }    
 input[type=number]:hover::-webkit-inner-spin-button { 
     background: #eee url('http://i.stack.imgur.com/YYySO.png') no-repeat 50% 50%;  
-    /*width: 14px;*/
-    /*height: 14px;*/
     padding: 4px;
     position: relative;
     right: 6px;
-    /*border-radius: 28px;*/
 }
 
-
-
-
-@media(max-width: 768px){
+@media  only screen and (max-width: 760px) {
 
 .wrapper{
 	padding-top: 5em;
 	margin: 0 auto;
-	width: 76vw;
+	width: 61vw;
 	height: calc(93vh - 50px);
-	grid-template-columns: repeat(3, 25vw);
+	grid-template-columns: repeat(3, 20vw);
     grid-gap: 0.5vw;
-    grid-template-rows: repeat(3, 25vw);
+    grid-template-rows: repeat(3, 20vw);
   }
   #colorDisplay{
 	font-size: 3em;
@@ -180,7 +174,7 @@ input[type=number]:hover::-webkit-inner-spin-button {
 	padding-top: 0.5em;
 	font-size: 0.5em;
 	line-height: 1em;
-	background: lightblue;
+	background: rgb(120, 228, 243);
 	font-weight: 100;
 }
 #top-bar{
@@ -206,3 +200,19 @@ input[type=number]:hover::-webkit-inner-spin-button {
 	width: 20vw;
 }
 }
+@media only screen and (max-width: 400px) {
+
+.wrapper{
+	padding-top: 5em;
+	margin: 0 auto;
+	width: 91vw;
+	height: calc(93vh - 50px);
+	grid-template-columns: repeat(3, 30vw);
+    grid-gap: 0.5vw;
+    grid-template-rows: repeat(3, 30vw);
+  }
+  
+}
+
+
+

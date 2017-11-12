@@ -61,12 +61,8 @@ for(var i =0; i<btn.length;i++){
 
 // refresh button
 refresh.addEventListener("click", function(){
-	if(easyMode === true){
-		refreshEasyColors();		
-		}else{
-			easyMode = false;
-			refreshHardColors();
-		}
+	
+	easyMode === true ? refreshEasyColors() : refreshHardColors();
 });
 
 
